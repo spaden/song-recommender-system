@@ -1,0 +1,30 @@
+.inputcomponent {
+    position: relative;
+    &__textarea {
+        border: 1px solid rgb(233, 232, 232);
+        height: 200px;
+        outline: none;
+        border-radius: 8px;
+        padding: 20px;
+        overflow-y: scroll;
+        &:focus {
+            border: 1px solid #d5d8d7;
+        }
+        &--fetching {
+            filter: blur(1px);
+        }
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        border-radius: 50px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 50px;
+    }
+
+}

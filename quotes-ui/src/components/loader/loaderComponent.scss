@@ -1,0 +1,22 @@
+.loadercomponent {
+    &__spinner {
+        svg {
+            animation-name: spinneranimation;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            color: #000;
+            path {
+                fill:#48C9B0;
+            }
+        } 
+    }
+}
+
+@keyframes spinneranimation {
+    0% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }    
+}

@@ -1,0 +1,37 @@
+.userinputmodal {
+    position: relative;
+    &__spinnercomponent {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    &__predictedQuote {
+        background-color: #9FD7B3;
+        border-radius: 5px;
+        position: absolute;
+        top: 10%;
+        left: 2%;
+        right: 2%;
+        &--close {
+            position: absolute;
+            top: -10px;
+            right: -7px;
+            font-size: 10px;
+            cursor: pointer;
+            padding: 5px;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: blanchedalmond;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &--quotetext {
+            padding: 5px;
+        }
+    }
+}
